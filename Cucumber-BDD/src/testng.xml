@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Cucumber-BDD" parallel="methods" verbose="0">
+<test name="QAF-BDD-Test">
+  	<parameter name="step.provider.pkg" value="com.CucumberBDD.StepDef" />
+  	<parameter name="scenario.file.loc" value="resources/Features" />
+  <classes>
+     <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+  </classes>
+</test>
+</suite>
